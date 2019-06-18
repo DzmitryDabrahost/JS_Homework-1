@@ -20,9 +20,10 @@ console.log(barsik.name);
 
 // barsik = null;
 
-console.log(Cat.feed);
+console.log(barsik.feed());
 
-// ==============================================================
+
+
 
 //   Практическое задание 3:
 
