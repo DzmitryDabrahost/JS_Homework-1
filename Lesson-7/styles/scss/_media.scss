@@ -1,0 +1,301 @@
+@media (max-width: 640px) {
+	.header {
+		&-top {
+			height: 100px;
+			.row {
+				justify-content: space-around;
+
+				.logo,
+				.city,
+				.bell,
+				.envelope,
+				.profile .name {
+					display: none;
+				}
+
+				.icon {
+					display: block;
+				}
+
+				.logo-mobile {
+					display: block;
+				}
+
+				.page-title {
+					display: block;
+					color: #fff;
+					font-size: 36px;
+				}
+
+				.profile .photo img {
+					width: 60px;
+				}
+
+				.search i{
+					font-size: 32px;
+					color: #fff;
+				}
+			}
+		}
+
+		&-bottom {
+			position: absolute;
+			top: 90px;
+			left: 0;
+			transform: translateY(50px);
+			opacity: 0;
+			transition: .25s;
+
+			&.active {
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			nav {
+				height: inherit;
+
+				ul {
+					flex-direction: column;
+					border: 1px solid #000;
+
+					li {
+						background: #2d313d;
+
+						+li {
+							margin-left: 0;
+						}
+						
+						a {
+							padding: 10px 20px;
+							
+							&::before {
+								content: '';
+								display: none;
+							}
+
+							&:hover {
+								color: grey;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	.main {
+		&-row {
+			.left-sidebar {
+				display: none;
+			}
+
+			.content {
+				.title {
+					text-align: center;
+					font-size: 50px;
+					padding: 50px 75px 40px 85px;
+
+					a::after {
+						margin-top: 22px;
+					}
+				}
+
+				.forms {
+					height: 100px;
+
+					input {
+						display: none;
+					}
+
+					button {
+						position: static;
+						font-size: 38px;
+					}
+				}
+
+				.news-item {
+					display: none;
+				}
+
+				.plus {
+					display: block;
+					font-size: 38px;
+					margin-left: auto;
+					margin-right: 48px;
+				}
+
+				.settings {
+					font-size: 38px;
+				}
+
+				.comments {
+					.post {
+						.info {
+							&-one {
+								&__name,
+								&__status,
+								&__message,
+								&__time {
+									font-size: 24px;
+								}
+							}
+
+							&-title {
+								font-size: 28px;
+							}
+
+							&-desc {
+								font-size: 26px;
+							}
+
+							&-tags {
+								font-size: 24px;
+
+								i {
+									font-size: 24px;
+								}
+							}
+						}
+					}
+
+					.buttons button{
+						padding: 27px 40px 27px 30px;
+						font-size: 24px;
+					}
+				}
+
+				.footer {
+					&-top {
+						height: 81px;
+						padding: 0;
+
+						nav ul {
+							justify-content: center;
+
+							li a {
+								font-size: 18px;
+							}
+						}
+					}
+					
+					&-bottom {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 610px) {
+
+	.header-top {
+		height: 84px;
+	}
+
+	.header-top .row {
+		justify-content: center;
+	}
+
+	.header-top .row .icon {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+
+		.burger {
+			width: 30px;
+
+			&::before {
+				width: 30px;
+				top: -10px;
+			}
+
+			&::after {
+				top: 10px;
+				width: 30px;
+			}
+		}
+	}
+
+	.header-top .row .logo-mobile img{
+		width: 60px;
+		height: 37px;
+	}
+
+	.header-top .row .page-title {
+		font-size: 20px;
+		margin: 0 13px;
+	}
+
+	.header-top .row .profile .photo img {
+		width: 45px;
+	}
+
+	.header-top .row .search i {
+		font-size: 20px;
+	}
+
+	.header-bottom {
+		top: 80px;
+	}
+
+	.main-row .content .title {
+		font-size: 34px;
+		padding: 25px 10px;
+
+	 	a::after {
+			 margin-top: 10px;
+		 }
+	}
+
+	.main-row .content .forms {
+		height: 59px;
+	}
+	.content .forms form i, 
+	.main-row .content .plus,
+	.main-row .content .settings {
+		font-size: 28px;
+	}
+
+	
+	.main-row .content .comments .post .info-one__message,
+	.main-row .content .comments .post .info-one__time {
+		display: none;
+	}
+
+	.main-row .content .comments .post .info-one__message-mobile,
+	.main-row .content .comments .post .info-one__time-mobile {
+		display: inline-block;
+		font-size: 14px;
+	}
+	
+
+	.main-row .content .comments .post .info-one__name,
+	.main-row .content .comments .post .info-one__status,
+	.main-row .content .comments .post .info-one__message,
+	.main-row .content .comments .post .info-one__time {
+		font-size: 14px;
+	}
+
+	.main-row .content .comments .post .info-title {
+		font-size: 18px;
+	}
+
+	.main-row .content .comments .post .info-desc {
+		font-size: 16px;
+	}
+	.main-row .content .comments .post .info-tags i,
+	.main-row .content .comments .post .info-tags {
+		font-size: 16px;
+	}
+
+	.main-row .content .comments .buttons button {
+		padding: 17px 30px 17px 20px;
+		font-size: 16px;
+	}
+
+	.main-row .content .footer-top nav ul li a {
+		font-size: 16px;
+	}
+}
