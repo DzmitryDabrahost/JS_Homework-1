@@ -126,6 +126,10 @@
 						font-size: 14px;
 						margin-right: 10px;
 
+						&-mobile {
+							display: none;
+						}
+
 						i {
 							font-size: 12px;
 						}

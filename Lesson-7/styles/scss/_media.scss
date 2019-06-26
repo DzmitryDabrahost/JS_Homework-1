@@ -44,11 +44,12 @@
 			left: 0;
 			transform: translateY(50px);
 			opacity: 0;
-			transition: .25s;
+			z-index: 10;
 
 			&.active {
 				transform: translateY(0);
 				opacity: 1;
+				transition: .25s;
 			}
 
 			nav {

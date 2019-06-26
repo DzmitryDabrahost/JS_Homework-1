@@ -326,8 +326,7 @@ body {
 }
 
 .main-row .left-sidebar nav ul li.headline {
-  font-family: Georgia;
-  font-size: 18px;
+  font: 18px Georgia;
   margin-top: 32px;
   padding: 9px 28px 9px 23px;
 }
@@ -528,6 +527,10 @@ body {
   margin-right: 10px;
 }
 
+.content .comments .post .info-one__message-mobile, .content .comments .post .info-one__time-mobile {
+  display: none;
+}
+
 .content .comments .post .info-one__message i, .content .comments .post .info-one__time i {
   font-size: 12px;
 }
@@ -700,13 +703,14 @@ body {
     -webkit-transform: translateY(50px);
             transform: translateY(50px);
     opacity: 0;
-    -webkit-transition: .25s;
-    transition: .25s;
+    z-index: 10;
   }
   .header-bottom.active {
     -webkit-transform: translateY(0);
             transform: translateY(0);
     opacity: 1;
+    -webkit-transition: .25s;
+    transition: .25s;
   }
   .header-bottom nav {
     height: inherit;
