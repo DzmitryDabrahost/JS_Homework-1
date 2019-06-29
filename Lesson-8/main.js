@@ -38,7 +38,7 @@ function Cat() {
 		return this;
 	};
 }
-ы
+
 var barsik = new Cat('Барсик');
 
 console.log(barsik.feed().stroke().stroke().feed().stroke());
