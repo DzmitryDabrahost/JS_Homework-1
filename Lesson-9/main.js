@@ -38,7 +38,7 @@ function cloneDeep(obj) {
 			continue;
 		}
 
-		if (typeof (currentVariable) == 'object') {
+		if (typeof (currentVariable) == 'object' && !!currentVariable) {
 			emptyObj[key] = cloneDeep(currentVariable);
 			continue;
 		}
