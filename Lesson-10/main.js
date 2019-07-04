@@ -13,7 +13,7 @@ Animal.prototype.dailyNorm = function (amount) {
 		return 'Недопустимое количество корма.';
 	}
 
-	foodAmount = amount;
+	this._foodAmount = amount;
 };
 
 Animal.prototype.feed = function () {
