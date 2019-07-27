@@ -24,10 +24,10 @@ container.onclick = function (e) {
 		e.preventDefault();
 
 		if (localStorage.getItem(e.target.innerText)) {
-			return alert(localStorage.getItem(e.target.innerText));
+			return alert(JSON.parse(localStorage.getItem(e.target.innerText)).path);
 		}
 
-		localStorage.setItem(e.target.innerText, e.target.getAttribute('href'));
+		localStorage.setItem(e.target.innerText, JSON.stringify({path: e.target.getAttribute('href')}));
 		alert('Сслыка сохранена');
 	}
 };
