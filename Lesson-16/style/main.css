@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  min-width: 320px;
+  padding: 100px;
+  background: #000;
+}
+
+.wrapper {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.wrapper p.error {
+  color: red;
+}
+
+.wrapper button {
+  display: block;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: green;
+  border: none;
+  color: #fff;
+  outline: none;
+  -webkit-transition: .15s;
+  transition: .15s;
+  border-radius: 3px;
+}
+
+.wrapper button:hover {
+  background: #005a00;
+}
+
+.wrapper .users {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .users-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper .users-link + .users-link {
+  margin-left: 10px;
+}
+
+.wrapper .users-link a {
+  background: green;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10% 10% 0 0;
+}
+
+.wrapper .users-link a.active {
+  background: #fff;
+  color: #000;
+}
+
+.wrapper .users-link a + a {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.wrapper .users-info {
+  background: #fff;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: italic;
+  border-radius: 0 5px 5px 5px;
+}
+
+.wrapper .users-info img {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=main.css.map */
